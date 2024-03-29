@@ -13,6 +13,7 @@ body{
     display:flex;
 }
 nav {/*Basic Information for Navigation Bar*/
+    position:fixed;
     background-color: #706233;
     height: 50px;
     width: 100%;
@@ -36,5 +37,43 @@ nav a:nth-child(2){
     margin-left: auto;
 }
 nav a:last-child{
-background-color: #E1C78F;
+    background-color: #E1C78F;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section:first-of-type{
+    margin-top: 50px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    min-width: 400px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #B0926A;
+    align-items: center;
+}
+.card img{
+    width: 100%;
+}
+.card h1{
+    margin: 0;
+    font-size: 35px;
+}
+.card p{
+    
+}
+.login {
+    display: flex;
+    width: 23%;
+    min-width: 400px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #B0926A;
 }

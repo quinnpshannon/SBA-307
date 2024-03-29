@@ -16,20 +16,31 @@
         <div class="login">
             <h1>Login</h1>
             <fieldset style="border:0px">
-                <label for="regName">User Name:
-                    <input type="text" name="regName" id="regName" required />
+                <label for="liuser">User Name:
+                    <input type="text" name="liuser" id="liuser" required />
                 </label>
-                <label for="pass">Password:
-                    <input type="password" name="pass" id="pass" required />
+                <label for="lipass">Password:
+                    <input type="password" name="lipass" id="lipass" required />
                 </label>
+                <div class="row">
+                    <input type="submit" name="lisubmit">
+                </div>
             </fieldset>
         </div>
         <div class="register">
             <h1>Register</h1>
             <fieldset style="border:0px">
-                <div class="row">
-                    <label>Subject:</label>
-                    <select style="float:right;" name="sortQue" required>
+                <label for="regName">User Name:
+                    <input type="text" name="reguser" id="regName" required />
+                </label>
+                <label for="regpass">Password:
+                    <input type="password" name="regpass" required />
+                </label>
+                <label for="repeatpass">Confirm Password:
+                    <input type="password" name="repeatpass" id="repeatpass" required />
+                </label>
+                <label for="dropdn">Subject:
+                    <select name="sortQue" id="dropdn" required>
                         <option value="bugRep">Bug Report</option>
                         <option value="compli">Compliments</option>
                         <option value="cusSer" selected>Customer Service</option>
@@ -37,6 +48,12 @@
                         <option value="refInq">Refund Inquiries</option>
                         <option value="others">All Other Comments</option>
                     </select>
+                </label>
+                <div class="row">
+                    <label>
+                        <input type="checkbox" name="regsubmit">
+                    </label>
+                    <input type="submit" name="regsubmit">
                 </div>
             </fieldset>
         </div>

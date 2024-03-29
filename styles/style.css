@@ -48,8 +48,22 @@ section:first-of-type{
     margin-top: 50px;
     width: 100%;
 }
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+select{
+    display: flex;
+    justify-content: flex-end;
+}
 .row {
-    display: inline;
+    display: flex;
+}
+.row label:last-child {
+    justify-content: flex-end;
+}
+.row:last-child {
+    justify-content: flex-end;
 }
 .card {
     display: flex;
@@ -96,4 +110,9 @@ section:first-of-type{
     padding: 5px;
     border-radius: 5px;
     background-color: #B0926A;
+}
+.register label{
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom: 3px;
 }

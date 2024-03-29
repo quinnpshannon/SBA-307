@@ -1,0 +1,40 @@
+/* Color selection
+Darker
+#706233
+#B0926A
+#E1C78F
+#FAE7C9
+Lighter
+*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FAE7C9;
+    display:flex;
+}
+nav {/*Basic Information for Navigation Bar*/
+    background-color: #706233;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    display:flex;
+}
+nav a{/*Here is what links in Nav do*/
+    display: flex;
+    background-color: #B0926A;
+    height: 80%;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 25px;
+    margin: 10px;
+}
+nav a img{/*Here is what Images in Nav do*/
+    height: 100%;
+}
+nav a:nth-child(2){
+    margin-left: auto;
+}
+nav a:last-child{
+background-color: #E1C78F;
+}

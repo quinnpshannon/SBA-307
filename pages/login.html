@@ -14,7 +14,31 @@
     </nav>
     <section>
         <div class="login">
-
+            <h1>Login</h1>
+            <fieldset style="border:0px">
+                <label for="regName">User Name:
+                    <input type="text" name="regName" id="regName" required />
+                </label>
+                <label for="pass">Password:
+                    <input type="password" name="pass" id="pass" required />
+                </label>
+            </fieldset>
+        </div>
+        <div class="register">
+            <h1>Register</h1>
+            <fieldset style="border:0px">
+                <div class="row">
+                    <label>Subject:</label>
+                    <select style="float:right;" name="sortQue" required>
+                        <option value="bugRep">Bug Report</option>
+                        <option value="compli">Compliments</option>
+                        <option value="cusSer" selected>Customer Service</option>
+                        <option value="genQue">General Question</option>
+                        <option value="refInq">Refund Inquiries</option>
+                        <option value="others">All Other Comments</option>
+                    </select>
+                </div>
+            </fieldset>
         </div>
     </section>
 </body>

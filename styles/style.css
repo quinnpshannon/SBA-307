@@ -28,10 +28,17 @@ nav a{/*Here is what links in Nav do*/
     background-color: #B0926A;
     height: 80%;
     align-items: center;
+    justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 25px;
     margin: 10px;
+    width: 100px;
+    transition-property: width;
+    transition-duration: 1.5s;
+}
+nav a:hover{/*Here is what links in Nav do*/
+    width: 150px;
 }
 nav a img{/*Here is what Images in Nav do*/
     height: 100%;

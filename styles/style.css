@@ -34,6 +34,7 @@ nav a{/*Here is what links in Nav do*/
     border-radius: 25px;
     margin: 10px;
     width: 100px;
+    text-decoration: none;
     transition-property: width;
     transition-duration: 1.5s;
 }
@@ -66,6 +67,23 @@ select{
     width: 177px;
     display: flex;
     justify-content: flex-end;
+}
+table{
+    text-align: center;
+}
+thead td{
+    background-color: #E1C78F;
+}
+td{
+    background-color: #E1C78F;    
+    transition-property: background-color;
+    transition-duration: 1.5s;
+}
+td a{
+    text-decoration: none;
+}
+td:hover{
+    background-color: #B0926A;
 }
 .row {
     display: flex;

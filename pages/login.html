@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <title>Login Page</title>
 </head>
 <body>
@@ -15,47 +18,52 @@
     <section>
         <div class="login">
             <h1>Login</h1>
-            <fieldset style="border:0px">
-                <label for="liuser">User Name:
-                    <input type="text" name="liuser" id="liuser" required />
-                </label>
-                <label for="lipass">Password:
-                    <input type="password" name="lipass" id="lipass" required />
-                </label>
-                <div class="row">
-                    <input type="submit" name="lisubmit">
-                </div>
-            </fieldset>
+            <form>
+                <fieldset style="border:0px">
+                    <label for="liuser">User Name:
+                        <input type="text" name="liuser" id="liuser" required />
+                    </label>
+                    <label for="lipass">Password:
+                        <input type="password" name="lipass" id="lipass" required />
+                    </label>
+                    <div class="row">
+                        <label for="remem">Remember Me
+                            <input type="checkbox" name="remem">
+                        </label>
+                        <input type="submit" name="lisubmit">
+                    </div>
+                </fieldset>
+            </form>
         </div>
         <div class="register">
             <h1>Register</h1>
-            <fieldset style="border:0px">
-                <label for="regName">User Name:
-                    <input type="text" name="reguser" id="regName" required />
-                </label>
-                <label for="regpass">Password:
-                    <input type="password" name="regpass" required />
-                </label>
-                <label for="repeatpass">Confirm Password:
-                    <input type="password" name="repeatpass" id="repeatpass" required />
-                </label>
-                <label for="dropdn">Subject:
-                    <select name="sortQue" id="dropdn" required>
-                        <option value="bugRep">Bug Report</option>
-                        <option value="compli">Compliments</option>
-                        <option value="cusSer" selected>Customer Service</option>
-                        <option value="genQue">General Question</option>
-                        <option value="refInq">Refund Inquiries</option>
-                        <option value="others">All Other Comments</option>
-                    </select>
-                </label>
-                <div class="row">
-                    <label>
-                        <input type="checkbox" name="regsubmit">
+            <form>
+                <fieldset style="border:0px">
+                    <label for="regName">User Name:
+                        <input type="text" name="reguser" id="regName" required />
                     </label>
-                    <input type="submit" name="regsubmit">
-                </div>
-            </fieldset>
+                    <label for="regpass">Password:
+                        <input type="password" name="regpass" required />
+                    </label>
+                    <label for="repeatpass">Confirm Password:
+                        <input type="password" name="repeatpass" id="repeatpass" required />
+                    </label>
+                    <label for="dropdn">Subject:
+                        <select name="sortQue" id="dropdn" required>
+                            <option value="bugRep">Bug Report</option>
+                            <option value="compli">Compliments</option>
+                            <option value="cusSer" selected>Customer Service</option>
+                            <option value="genQue">General Question</option>
+                            <option value="refInq">Refund Inquiries</option>
+                            <option value="others">All Other Comments</option>
+                        </select>
+                    </label>
+                    <div class="row">
+                        <input type="reset" name="regreset">
+                        <input type="submit" name="regsubmit">
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </section>
 </body>
